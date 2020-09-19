@@ -1,0 +1,77 @@
+<div wm-slider>
+<p>
+    <img src="imagens/FB_IMG_1514898832406.jpg"
+        alt="meeting"
+        width="513"
+        height="342"
+        title="Eu">
+</p>
+<p class="cicular">
+    <img src="imagens/aula 1.jpg"
+    alt="não foi">
+</p>
+<p class="texto">
+    <img src="imagens/aula 2.jpg"
+    alt="avatar" height="540" >
+     saudades de ser a tia Rebecca
+</p>
+<p>
+    <picture>
+
+    </picture>
+</p>
+</div>
+<style>
+    cicular {
+        width: 513px;
+        background-color: tomato;
+    }
+    texto {
+        width:  40px;
+    }
+    .texto img {
+        margin: 10px;
+    }
+</style>
+<script>
+    function mover(elementos, ini, fim, passo, callback){
+        const novoInicio = ini - passo
+        if(novoInicio>= fim) {
+            elementos.style.left = novoInicio + "px"
+            setTimeout(() => mover(elementos, novoInicio, fim, passo, callback), 7)
+        
+        }
+        else{
+            callback()
+        }
+    }
+    const p = document.querySelector('[wm-slider] > p')
+    p.style.display = 'block'
+    mover(p, 1500, -400, 5, () => {
+        console.log('terminou')
+        
+    })
+    function slider(){
+        const elementos = document.querySelectorAll('[wm-slider] > p')
+        const slider = Array.from(elementos)
+        exibirSlider(slides, slide)
+    }
+    function exibirSlider(slides, slide) {
+      slide.style.display = 'block'
+      const ini = innerWidth
+      const fim = -slide.clientwidth
+      slide.style.left = `${ini}px`
+      mover(slide, ini, fim, 4, () => {
+          slide.style.display = none 
+          exibirSlider(slide, getProximo(slides, slide))
+      })
+    }
+    function getProximo(lista, atual) {
+        const i = lista.indexdf(atual) + 1
+        return i < lista.length ? lista[i] : lista[0]
+    }
+    slider()
+
+</script>
+
+

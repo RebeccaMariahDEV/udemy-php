@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="exercicios/html" >
+    <title> Curso PHP</title>
+    <style>
+        #conteudo { 
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 Exercicios de teste></h1>
+    </header> <!-- cabeçario-->
+
+    <main class="principal"></main>  <!--principal-->
+    <footer>
+        Curso de web moderno
+    </footer> <!--rodapé-->
+    <br>
+    <script>
+        document.querySelectorAll('a').forEach(link=>{
+            link.onclick= function(e){
+                e.preventDefault()
+                
+                const conteudo = document.getElementById('conteudo')
+                fetch(link.href)
+                    .then(resp => resp.text()
+                    .then(html => conteudo.innerHTML = html))
+            }
+            
+        })
+    </script>
+    <nav>Teste<br>
+        <a href="html/teste.html">00-test</a>
+        <br>
+        <a href="html/texto1.html">01-test</a>
+        <br>
+        <a href="html/texto2.html">02- test</a>
+        <br>
+        <a href="html/lista.html">03- Listas</a>
+        <br>
+        <a href="html/listasAninhadas.html">04 - Listas Aninhadas</a>
+        <br>
+        <a href="html/links.html">05 - links</a>
+        <br>
+        <a href="html/tabelas.html">06 - Tabelas</a>
+        <br>
+        <a href="html/form.html">07 - Formularios</a>
+        <br>
+        <a href="/html/imagens.html">08 - Imagens</a>
+        <br>
+        <a href="/html/video.html">09 - Videos</a>
+    </nav> <!-- navegação-->
+    <section id="conteudo"></section>
+    <span>Teste</span> <!--textos, muitas coisas-->
+
+</body>
+</html>

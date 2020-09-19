@@ -1,0 +1,215 @@
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Minha Página</title>
+    
+            <style>
+
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .header {
+                    width: 100%;
+                    height: 50px;
+                    background-color: #333;
+                    /*padding: 0 10vw;*/
+                    display: block;
+                    
+                }
+
+                .header .title {
+                    float: left;
+                    height: 100%;
+                    color: white;
+                    font-size: 1.1em;
+                    margin-left: 10vw;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .header .menu {  
+                    float: right;
+                    height: 100%;
+                    display: flex;
+                    color: white;
+                    font-size: 1.1em;
+                    margin-right: 10vw;
+                    align-items: center;
+                }
+
+                .meu-menu {
+                    background-color: #333;
+                    border: 1px solid #666;
+                    padding: 7px;
+                    color: #999;
+                    border-radius: 5px;
+                }
+
+                .conteudo {
+                    margin: 100px;
+                    text-align: center;
+                    font-family: "Verdana";
+                }
+
+                .conteudo p {
+                    color: #666;
+                    letter-spacing: 0.1em;
+                    font-size: 0.8em;
+                }
+
+                .btn {
+                    background-color: #666;
+                    border: 1px solid #666;
+                    padding: 7px 10px;
+                    color: #FFF;
+                    border-radius: 5px;
+                }
+
+                .btn-primary {
+                    background-color: mediumblue;
+                    border: 1px solid dodgerblue;
+                }
+
+                .cards {
+                    background-color: #f2f2f2;
+                    display: flex;
+                    padding: 30px 50px;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .cards .card {
+                    border: 1px solid #999;
+                    margin-left: 20px;
+                    width: 33%;
+                    min-height: 200px;
+                    border-radius: 5px;
+                }
+
+                .card .image {
+                    background-color: #333;
+                    color: white;
+                    width: 100%;
+                    height: 180px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                }
+                
+                .card .textos {
+                    margin: 15px;
+                }
+
+                .card .textos .texto {
+                    margin-bottom: 15px;
+                }
+
+                .card .textos .actions {
+                    display: inline-block;
+                    width: 100%;
+                }
+
+                .card .textos .actions .botoes {
+                    float: left;
+                }
+                .card .textos .actions .botoes button {
+                    margin: -3px;
+                    padding: 3px 7px;
+                    color: #666;
+                }
+
+                .card .textos .actions .minutos {
+                        float: right;
+                        color: #666;
+                        font-size: 0.8em;
+                }
+ 
+            </style>
+    </header>
+    <body>
+        <div class="header">
+            <div class="title">
+                <p>Album</p>
+            </div>
+            <div class="menu">
+                <button class="meu-menu"> Menu </button>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h1>Album Example</h1>
+            <p> Something lorem ipsum arka Something lorem ipsum arka Something lorem ipsum arka Something lorem ipsum arka Something lorem ipsum arka Something lorem ipsum arka</p>
+            <div>
+                <button class="btn btn-primary">Main call to action</button>
+                <button class="btn">Secondary action</button>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="image">
+                    Thumb
+                </div>
+                <div class="textos">
+                    <div class="texto">
+                        asdas asdas dasdas das dasdas asd asdasdas dasdas dasdasd asda sd asdas
+                    </div>
+                    <div class="actions">
+                        <div class="botoes">
+                            <button>Ver</button>
+                            <button>Editar</button>
+                        </div>
+                        <div class="minutos">
+                            9 mins
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="image">
+                    Thumb
+                </div>
+                <div class="textos">
+                    <div class="texto">
+                        asdas asdas dasdas das dasdas asd asdasdas dasdas dasdasd asda sd asdas
+                    </div>
+                    <div class="actions">
+                        <div class="botoes">
+                            <button>Ver</button>
+                            <button>Editar</button>
+                        </div>
+                        <div class="minutos">
+                            9 mins
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="image">
+                    Thumb
+                </div>
+                <div class="textos">
+                    <div class="texto">
+                        asdas asdas dasdas das dasdas asd asdasdas dasdas dasdasd asda sd asdas
+                    </div>
+                    <div class="actions">
+                        <div class="botoes">
+                            <button>Ver</button>
+                            <button>Editar</button>
+                        </div>
+                        <div class="minutos">
+                            9 mins
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
