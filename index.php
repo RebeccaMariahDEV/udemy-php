@@ -1,5 +1,6 @@
 <?php 
 session_start();
+date_default_timezone_set('America/Sao_Paulo');
 // index
 
 if($_COOKIE['usuario']){
@@ -36,7 +37,7 @@ if(!$_SESSION['usuario']){
             </div>
         </main>
         <footer class="rodape">
-            COD3R & ALUNOS <?= date('Y');?>
+            COD3R & ALUNOS <?= date('d/m/Y');?>
         </footer>
     </body>
 </html>
