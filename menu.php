@@ -141,4 +141,21 @@
                          <li><a href="exercicio.php?dir=sessao&file=gerenciando_sessao">Gerenciando Sessão</a></li>
                      </ul>
                  </div>
-                </nav>
+                    <div class="modulo azul">
+                    <h3>API</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=api&file=datas">Datas 01</a></li>
+                        <li><a href="exercicio.php?dir=api&file=datas_02">Datas 02</a></li>
+                        <li><a href="exercicio.php?dir=api&file=escrever_arquivo">Escrever Arquivo</a></li>
+                        <li><a href="exercicio.php?dir=api&file=ler_arquivo">Ler Arquivo</a></li>
+                        <li><a href="exercicio.php?dir=api&file=upload">Upload</a></li>
+                        <li><a href="exercicio.php?dir=api&file=download">Download</a></li>
+                    </ul>
+                </div>
+    <div class="modulo roxo">
+        <h3>Formulario</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=formulario&file=formulario">Formulario</a></li>
+        </ul>
+    </div>
+            </nav>

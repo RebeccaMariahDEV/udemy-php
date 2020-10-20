@@ -1,0 +1,3 @@
+Valor inicial\n
+Segunda linhamais um valor adicionado\n
+Adicionado durante a leitura
